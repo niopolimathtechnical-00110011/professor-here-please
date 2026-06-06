@@ -1,0 +1,15 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+echo "🚀 Iniciando Sim_Pois_Não - Professor"
+echo "====================================="
+echo ""
+echo "📡 Servidor UDP rodando na porta 8080"
+echo "🌐 IP da máquina: $(hostname -I | awk '{print $1}')"
+echo ""
+echo "📱 Instruções para os alunos:"
+echo "   1. Configure o IP: $(hostname -I | awk '{print $1}')"
+echo "   2. Clique na imagem para pedir ajuda"
+echo ""
+echo "====================================="
+echo ""
+python3 professor_com_foto.py
